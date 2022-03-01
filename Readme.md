@@ -1,0 +1,1 @@
+Esse vai ser o repositório para as atividades desenvolvidas na disciplina de algoritmos e estrutura de dados 1.
