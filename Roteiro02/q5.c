@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 void listarContatosPorProfissao(char *p);
-
+// criamos um ponteiro como parametro
 int main(){
 char t [80];
 char *ponteiro = &t[80];
@@ -10,13 +10,13 @@ char *ponteiro = &t[80];
     scanf("%c",&t[80]);
     listarContatosPorProfissao(ponteiro);    
 }
-
+// funcão para compara por profissao cada contato
 void listarContatosPorProfissao(char *p){
     int id;
     char nome[80];
     char profissao[80];
     char telefone[80];
-
+// aui criado outro arquivo como auxiliar na leitura da lista
     FILE *f1 = fopen("agenda.dat", "r");
     FILE *f2 = fopen("agenda_aux.dat", "w");
     if(!f1){
